@@ -22,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 tv.setText("hello");
-                Log.d("my log", "button pressed");
+                Log.d("my log", "hello button pressed");
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tv.setText("bye");
+                Log.d("my log", "bye button pressed");
             }
         });
     }
